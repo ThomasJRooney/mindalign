@@ -6,8 +6,7 @@
     <br/>
     <h5 class="card-title">Welcome to Mind Align</h5>
     <% if current_user %>
-    <%= link_to "Start chatting", rooms_path %>
-    <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+    <%= link_to "Start chatting with your therapist", rooms_path %>
     <% else %>
     <%= link_to "Login", new_user_session_path %>
     <%= link_to "Sign up", new_user_registration_path %>
